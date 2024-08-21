@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Kiota.Serialization.Form" Version="1.9.11" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+	<ItemGroup>
+		<ApplicationDefinition Update="App.xaml">
+			<SubType>Designer</SubType>
+		</ApplicationDefinition>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Pages\AppExplorer\ResultLineDataFromFile.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Pages\HomePage.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Pages\LoginPage.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Pages\PhotoPage.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Pages\PhotoVisualPanelPage.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Pages\RegisterPage.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Pages\AppExplorer\WindowFilesExplorer.xaml.cs">
+			<SubType>Code</SubType>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="AppLogic\Dictionarys\Dictionary1.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Update="Pages\AppExplorer\ResultLineDataFromFile.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Update="Pages\HomePage.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Update="Pages\LoginPage.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Update="Pages\PhotoPage.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Update="Pages\PhotoVisualPanelPage.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Update="Pages\RegisterPage.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+		<Page Update="Pages\AppExplorer\WindowFilesExplorer.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Data\UsersData\" />
+	</ItemGroup>
+</Project>
